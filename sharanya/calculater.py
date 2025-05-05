@@ -13,16 +13,18 @@ class Calculator:
         return self.num1 * self.num2
 
     def divide(self):
-        
         if self.num2 != 0:
             return self.num1 / self.num2
         else:
             return "Cannot divide by zero"
 
+    def display_results(self):
+        print("Addition       :", self.add())
+        print("Subtraction    :", self.subtract())
+        print("Multiplication :", self.multiply())
+        print("Division       :", self.divide())
 
-calc = Calculator(self, num1=10, num2=5)
 
-print("Addition       :", calc.add())
-print("Subtraction    :", calc.subtract())
-print("Multiplication :", calc.multiply())
-print("Division       :", calc.divide())
+calc = Calculator(num1=10, num2=5)
+calc.display_results()
+ 
