@@ -8,3 +8,4 @@ print(getattr(Student, "age", "Default Age"))
 print(getattr(Student, "gender", "Default Gender"))
 
 print(Student.age)
+
