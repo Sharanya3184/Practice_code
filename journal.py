@@ -18,7 +18,7 @@ while True:
         print(f"\nCreating Journal Entry for {date}")
         entry = input("Write your journal entry:\n")
 
-        with open(filename, "w") as file:
+        with open(filename, "a") as file:
             file.write(entry + "\n")
 
         print(f"Entry saved in {filename}")
@@ -46,10 +46,10 @@ while True:
         else:
             print(" No entry found for that date.")
 
-    elif choice == '4':
+    elif choice == 'quit':
         print(" Exiting... Have a great day!")
         break
 
 
     else:
-        print(" Invalid choice. Please enter 1-4.")
+        print(" Invalid choice. Please enter 1-3.")
