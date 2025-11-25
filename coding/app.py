@@ -1,12 +1,4 @@
-'''import calculate
 
-
-def callfunc(num1,num2):
-    # print(f'Add: {calculate.add(num1, num2)}, Sub: {calculate.sub(num1, num2)}, Mul: {calculate.mul(num1, num2)}, Div: {calculate.div(num1, num2)}')
-    return (f'add:{calculate.add(num1, num2)}\nsub:{calculate.sub(num1, num2)}\nmul:{calculate.mul(num1, num2)}\ndiv:{calculate.div(num1, num2)}')
-print(callfunc(10,5))
- 
-'''
 
 import user
 import admin

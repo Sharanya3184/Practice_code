@@ -22,12 +22,16 @@ def main():
         user = user_detail(username, account_number)
     print("user_details", user)
 
+
+
     withdraw = input("Do you want to withdraw any amount from your account [yes/no]: ")
     if withdraw == "yes":
         amount = int(input("Enter the amount to withdraw: "))
         balance = buss.withdraw(balance, amount)
         print(f"Amount {amount} withdrawn successfully.")
         print(f"Total Balance: {balance}")
+
+
     
     deposit = input("Do you want to deposit any amount [yes/no]: ")
     if deposit == "yes":
@@ -38,4 +42,4 @@ def main():
         print(f"Total Balance: {balance}")
 
 if __name__ == "__main__":
-    main()m
+    main()
